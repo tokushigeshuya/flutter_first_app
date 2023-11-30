@@ -21,7 +21,12 @@ void main() {
             ),
           ),
           child: const Center(
-            child: Text('Hello World!'),
+            child: Text('Hello World!',
+            style: TextStyle(
+              fontSize: 60,
+              color: Colors.blueGrey,
+            ),
+            ),
           ),
         ), // centerウィジェットで中央揃え（ツリー構造になる）
       ), // 足場となるfunction(Scaffold)
