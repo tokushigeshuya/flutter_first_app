@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // voidがreturn type mainに関しては特殊なfunctionで実行の必要がない※dartのルールでvoidは値を返してはいけない
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: GradientContainer(), // centerウィジェットで中央揃え（ツリー構造になる）
       ), // 足場となるfunction(Scaffold)
@@ -12,6 +12,7 @@ void main() {
 }
 // クラスの継承(extends)
 class GradientContainer extends StatelessWidget {
+  const GradientContainer({super.key});
   @override
   // 関数の戻り値の型
   Widget build(context){
